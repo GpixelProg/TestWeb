@@ -24,6 +24,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: StatsRunner
+        run: |
+          lscpu
+
       - name: Test
         run: |
           ./gradlew check
